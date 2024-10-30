@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background: #606c88;
+  background: linear-gradient(to right, #3f4c6b, #606c88);
+  padding: 1%;
+  color: white;
+}
+
+.form {
+  background-color: white;
+  color: #606c88;
+  margin: 5%;
+  height: 500px;
+}
+
+button {
+  padding: 2%;
+  border: 1px solid #3f4c6b;
+  border-radius: 15px;
+  width: 50%;
+}
+
+input[type="text"] {
+  padding: 1%;
+  border-radius: 7px;
+}
+
+button:hover {
+  box-shadow: 10px 10px 10px #606c88;
+  transition: all 0.5s;
+}
+
+.gapping {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 50%;
+  margin: 2% 24%;
+}
+
+.space {
+  padding: 120px 1%;
+}
