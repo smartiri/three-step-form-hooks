@@ -19,7 +19,6 @@ function StepThree({ company, nextStep, prevStep }) {
           placeholder="Enter company code"
           defaultValue={company.companyCode}
         />
-        {/* <div> */}
         <button style={{ float: "left" }} onClick={prevStep}>
           Back
         </button>
@@ -31,11 +30,9 @@ function StepThree({ company, nextStep, prevStep }) {
         >
           Done
         </button>
-        {/* </div> */}
       </div>
     </div>
   );
 }
 
 export default StepThree;
-/*  */

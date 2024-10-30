@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import "../the_step_pages/assets/Header.css";
 import StepOne from "./StepOne";
 import StepTwo from "./StepTwo";
@@ -14,8 +13,6 @@ function FormContainer() {
     setStep3,
     goPrevStep,
   } = useStepForm();
-
-  console.log(step);
 
   return (
     <div className="form">
@@ -49,13 +46,6 @@ function FormContainer() {
         />
       )}
       {step === 4 && <StepFour formData={formData} />}
-      {/* <ul>
-        {Object.entries(formData).map(([key, val]) => (
-          <li>
-            {key.toUpperCase()}: {val}
-          </li>
-        ))}
-      </ul> */}
     </div>
   );
 }

@@ -11,10 +11,8 @@ const StepFour = ({ formData }) => {
             </p>
           ))}
         </div>
-        <button onClick={() => localStorage.clear()}>Reset</button>
       </div>
     </div>
-    // </div>
   );
 };
 
