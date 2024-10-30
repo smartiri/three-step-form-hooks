@@ -18,26 +18,43 @@ function useStepForm() {
 
   const setStep1 = (name, surname) => {
     if (name !== "" && surname !== "") {
-      return setFormData((fd) => ({ ...fd, name, surname, step: 2 }));
+      setFormData((fd) => ({ ...fd, name, surname, step: 2 }));
+      return localStorage.setItem(
+        "formData",
+        JSON.stringify({ ...formData, name, surname, step: 2 })
+      );
     }
     return console.log("Enter name and surname");
   };
 
   const setStep2 = (age, gender) => {
     if (age !== "" && gender !== "") {
-      return setFormData((fd) => ({ ...fd, age, gender, step: 3 }));
+      setFormData((fd) => ({ ...fd, age, gender, step: 3 }));
+      return localStorage.setItem(
+        "formData",
+        JSON.stringify({ ...formData, age, gender, step: 3 })
+      );
     }
     return console.log("Enter age and gender");
   };
 
   const setStep3 = (companyName, companyCode) => {
     if (companyName !== "" && companyCode !== "") {
-      return setFormData((fd) => ({
+      setFormData((fd) => ({
         ...fd,
         companyName,
         companyCode,
         step: 4,
       }));
+      return localStorage.setItem(
+        "formData",
+        JSON.stringify({
+          ...formData,
+          companyName,
+          companyCode,
+          step: 1,
+        })
+      );
     }
     return console.log("Enter company name and code");
   };
